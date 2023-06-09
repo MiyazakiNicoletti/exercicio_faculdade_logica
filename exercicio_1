@@ -1,0 +1,8 @@
+Definir 3 variavéis com valores que armazenem : o nome de uma fruta , uma verdura e um legume; mostrar mendasagem com a frase : "Aqui estão os nome de uma fruta , uma verdura e um legume" e e mostrar o nome da fruta, da verdura e do legume.
+
+
+fruta = "banana"
+verdura = "alface"
+legume = "cenoura"
+
+print("Aqui estão os nome de uma fruta , uma verdura e um legume", fruta,legume,verdura)
