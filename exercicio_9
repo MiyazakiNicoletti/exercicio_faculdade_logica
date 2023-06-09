@@ -1,0 +1,28 @@
+Faça um fluxograma que receba o custo de um espetáculo teatral e o preço do convite desse espetáculo. Esse fluxograma deve calcular e mostrar: 
+A quantidade de convites que devem ser vendidos para que pelo menos o custo do espetáculo seja alcançado. 
+A quantidade de convites que devem ser vendidos para que se tenha um lucro de 23%.
+
+
+
+custo = 2000
+ingresso = 200
+contador = 0
+contador_lucro = 0
+quantidade_ingresso = 0
+quantidade_ingresso_lucro = 0
+lucro = custo *0.23 + custo
+
+
+while contador < custo:
+    contador = contador + ingresso
+    quantidade_ingresso = quantidade_ingresso + 1
+    
+print(f"Nescessário vender ", quantidade_ingresso, "ingressos para cobrir as custas do espetaculo")   
+    
+
+
+while contador_lucro < lucro:
+    contador_lucro = contador_lucro + ingresso
+    quantidade_ingresso_lucro = quantidade_ingresso_lucro + 1
+
+print(f"Nescessário vender ", quantidade_ingresso_lucro, "ingressos para ter lucro de 23%")   
