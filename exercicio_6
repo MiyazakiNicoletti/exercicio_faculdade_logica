@@ -1,0 +1,10 @@
+
+Faça um programa que receba a idade em segundos, calcule e exiba a idade convertida em dias, horas e minutos.
+
+segundos = int(input("Digite os segundos da sua existencia")) 
+minutos =  int(segundos / 60)
+horas = int(minutos / 60)
+dias = int(horas / 12)
+	
+print(f"Você tem ", dias,"dias", horas, "horas", minutos, "minutos de vida")
+
