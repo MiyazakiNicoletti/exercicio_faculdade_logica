@@ -1,0 +1,6 @@
+fazer um código que converta metros para milímetros.
+
+
+metros = int(input("Digito metros para conversão"))
+milimetros = metros * 1000	
+print(milimetros)
