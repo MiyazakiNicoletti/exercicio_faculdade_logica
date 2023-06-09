@@ -1,0 +1,8 @@
+Faça um programa de  conversão de temperatura,  para converter de Celsius para Fahrenheit.
+
+
+celsius = int(input('Digite a temeratura para conversão:'))
+
+fahrenheit = celsius * 9/5 + 32
+print(f"A temperatura em fahrenheit é :",fahrenheit )
+
