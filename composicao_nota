@@ -1,0 +1,18 @@
+//calculo método de composição da média final (MF) 
+//a média das atividades contínuas (MAC) multiplicada pelo peso de 50%, nota da prova multiplicada pelo peso de 50%, soma-se esse resultado.
+//MF = Soma das 3 ACs ÷ 3 * 0,5 + Nota da prova/sub * 0,5.# exercicio_faculdade_logica
+
+
+ac1 = float(input("Digite a nota da sua AC1: "))
+ac2 = float(input("Digite a nota da sua AC2: "))
+ac3 = float(input("Digite a nota da sua AC3: "))
+prova = float(input("Digite a nota da sua Prova: "))
+
+media_ac = (ac1 + ac2 + ac3) / 3
+media = media_ac * 0.5 + prova * 0.5
+
+print("Sua média é:", media)
+if media >= 7:
+	    print("Você foi aprovado")
+else:
+	    print("Você foi reprovado")
