@@ -1,0 +1,35 @@
+Escreva o fluxograma de um programa que tenha como entrada o tipo do vôo ('N' para noturno e 'D' para diurno) e a quantidade de pessoas; calcule e mostre a tarifa e o total a pagar de acordo com as condições abaixo:
+Tipo de Vôo
+Quantidade
+Tarifa
+Diurno
+<= 50
+R$ 200,00
+> 50
+R$ 120,00
+Noturno
+<= 50
+R$ 100,00
+> 50
+R$ 80,00
+
+Obs.: Total a pagar = quantidade de pessoas × tarifa.
+
+tipo_voo = str(input("Digite o tipo de vôo , d para diurno ou n para norturno"))
+quantidade_pessoas = int(input("Digite a quantidadse de pessoas no vôo"))
+tarifa = 0
+
+if tipo_voo == "d" :
+    if quantidade_pessoas <=50:
+        tarifa = 200
+    else :
+        tarifa = 120
+elif tipo_voo == "n" :
+    if quantidade_pessoas <=50:
+        tarifa = 100
+    else:
+        tarifa = 80
+
+print(f"A tarifa será de : R$", tarifa)
+print(f"O valor total será de  : R$", tarifa * quantidade_pessoas)
+
