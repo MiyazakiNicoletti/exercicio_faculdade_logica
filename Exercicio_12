@@ -1,0 +1,19 @@
+Considere o problema de conversão de temperatura com três possibilidades: 
+Celsius para Fahrenheit (usuário deve digitar 'F');
+Fahrenheit para Celsius (usuário deve digitar 'C'); e 
+O usuário digitar um valor inválido (qualquer coisa diferente de 'C' ou 'F'). 
+
+
+
+temperatura = int(input("Digite a temperatura para conversão"))
+conversao = str(input("Digite F para converter Celsius para Fahrenheit ou C para converter Fahrenheit para Celsius"))
+
+
+if conversao == "F":
+    resultado = temperatura * 1.8 + 32
+    print(f" ",temperatura,"Graus Celsius corresponde a ", resultado, " em Fahrenheit")
+elif conversao == "C":
+    resultado = (temperatura - 32)/1.8
+    print(f"{temperatura:.2f} Graus Celsius corresponde a {resultado:.2f} em Fahrenheit")
+else:
+    print("Você digitou valores invalidos")
