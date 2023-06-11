@@ -1,0 +1,34 @@
+Um posto de combustível vende três tipos de combustível: álcool, diesel e gasolina. O preço de cada litro de combustível é apresentado na tabela abaixo. Faça o fluxograma de um programa que leia a quantidade de litros, um caractere que representa o tipo de combustível comprado ('a', 'd' ou 'g') e exibe o valor em reais a ser pago.
+Combustível
+Preço por Litro (R$)
+a (álcool)
+3,8997
+d (diesel)
+3,6543
+g (gasolina)
+4,4009
+
+
+
+
+
+
+
+a = 3.8997
+d = 3.6543
+g = 4.4009
+	
+quant_litros = int(input("Digite a quantidade de litros:"))
+tipo_combustivel = str(input("Digite o tipo de combustivel a (alcool) b (disel) g (gasolina):"))
+
+if tipo_combustivel == "a":
+	    valor_compra = quant_litros * a
+	    print(f"Valor da compra é :", valor_compra)
+elif tipo_combustivel == "d":
+	    valor_compra = quant_litros * d
+	    print(f"Valor da compra é :", valor_compra)
+elif tipo_combustivel == "g":
+	    valor_compra = quant_litros * g
+	    print(f"Valor da compra é :", valor_compra) 
+else:
+	    print("Você digitou valores inválidos")
