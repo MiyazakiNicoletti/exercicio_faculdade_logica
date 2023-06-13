@@ -1,0 +1,28 @@
+tipo_internacao =  str(input("Qual tipo de quarto ? (particular/semiparticular/coletivo) ?"))
+dias_internacao =  int(input("Quantos dias de internação ?"))
+uso_internet = str(input("utilizou internet durante a internação ?"))
+uso_tv_cabo = str(input("utilizou tv a cabo durante a internação ?"))
+
+particular = 360.0 * dias_internacao
+semi_particular = 210.0 * dias_internacao
+coletivo = 185.0 * dias_internacao
+internet = 3.0 * dias_internacao
+tv_cabo = 4.0 * dias_internacao
+total = 0
+
+while total == 0:
+    if tipo_internacao == "particular":
+        total = particular
+    elif tipo_internacao == "semiparticular":
+        total = particular
+    elif tipo_internacao == "coletivo":
+        total = coletivo
+    else:
+        print("Você digitou um valores invalidos")
+        
+if uso_internet == "sim":
+    total += internet 
+    if uso_tv_cabo == "sim":
+        total += tv_cabo    
+    
+print(f"O total da sua internação é", total)
